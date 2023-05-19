@@ -14,7 +14,7 @@ export default function News(props)
 	async function getNews()
 	{
 		props.setProgress(10); //Loading bar
-		let url = `https://gnews.io/api/v4/top-headlines?apikey=c7f999d87e9dcf0d2851cf6450794afd&language=en&country=${props.country}&category=${props.category}&max=${props.pageSize}`;
+		let url = `https://gnews.io/api/v4/top-headlines?apikey=5d68e7f6043cf0b7da84b4363c4a78e2&language=en&country=${props.country}&category=${props.category}&max=${props.pageSize}`;
 		let data = await fetch(url);
 		let parsedData = await data.json();
 
